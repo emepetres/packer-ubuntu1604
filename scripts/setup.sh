@@ -16,7 +16,7 @@ echo 'APT::Periodic::Enable "0";' >> /etc/apt/apt.conf.d/10periodic
 apt-get -y -q install linux-headers-$(uname -r) build-essential dkms nfs-common
 
 # Install necessary dependencies
-apt-get -y -q install curl wget git tmux xvfb vim
+apt-get -y -q install curl wget git tmux xvfb vim dos2unix
 
 # Installing vagrant keys
 mkdir ~/.ssh
